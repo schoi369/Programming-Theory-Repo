@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Shape : MonoBehaviour
 {
     public Text displayText;
-    protected Color shapeColor { get; private set; }
+    protected Color shapeColor { get; private set; } // ENCAPSULATION
     private Renderer rend;
 
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class Shape : MonoBehaviour
     }
 
     private void OnMouseDown() {
-        DisplayText();
+        DisplayText(); // ABSTRACTION
     }
     
     public virtual void DisplayText() {
